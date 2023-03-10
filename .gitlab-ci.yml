@@ -23,6 +23,6 @@ unit-test-job:   # This job runs in the test stage.
   stage: test    # It only starts when the job in the build stage completes successfully.
   image: python:3.10
   before script:
-    - pip install -r requirements.txt
+      - pip install -r requirements.txt
   script:
     - pytest -v
